@@ -1,0 +1,10 @@
+.red-line-scroll {
+  position: fixed;
+  height: 4px;
+  background: rgb(226, 30, 36);
+  top: 0;
+  left: 0;
+  width: 0;
+  z-index: 1001;
+  transition: width 0.6s ease;
+}

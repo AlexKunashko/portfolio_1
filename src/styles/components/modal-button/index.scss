@@ -1,0 +1,66 @@
+.modal-button {
+  z-index: 2;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #ffa801;
+  font-size: 35px;
+  text-align: center;
+  line-height: 52px;
+  color: $color-white;
+  animation: pulse 1.5s infinite;
+  &__inner {
+    position: relative;
+    i {
+      transform: rotate(-40deg);
+    }
+  }
+  &__back-orange {
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    height: 66px;
+    width: 66px;
+    background-color: #ffa801;
+    border-radius: 50%;
+    opacity: 0.2;
+  }
+  &__pulse {
+    z-index: 1;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #ffa801;
+    animation: pulse-radius 1.5s infinite;
+  }
+}
+@keyframes pulse-radius {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}

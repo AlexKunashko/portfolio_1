@@ -1,0 +1,33 @@
+.why-us {
+  background-color: $color-light-dark;
+  color: $color-white;
+  padding-top: 9.375em;
+  padding-bottom: 0.9375em;
+  &__title {
+    margin-bottom: 6.5625em;
+    @include breakpoint($bp-lg) {
+      margin-bottom: 2em;
+    }
+    h2 {
+      margin-bottom: 1em;
+    }
+    h4 {
+      line-height: 1.5;
+    }
+  }
+  &__inner {
+    text-align: center;
+    img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 2em;
+    }
+    p {
+      line-height: 2;
+      font-size: 0.875em;
+      b {
+        font-size: 1.25em;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.about-the-kitchen {
+  background-color: $color-light-dark;
+  color: $color-white;
+  padding-top: 9.375em;
+  padding-bottom: 0.9375em;
+  @include breakpoint($bp-lg) {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    margin-bottom: 5em;
+  }
+  &__inner {
+    width: 980px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 980px;
+    }
+  }
+  &__info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    &:nth-child(2) {
+      left: 18%;
+      top: 4%;
+    }
+    &:nth-child(3) {
+      left: 32%;
+      top: 6%;
+    }
+    &:nth-child(4) {
+      left: 52%;
+      top: 31%;
+    }
+    &:nth-child(5) {
+      left: 5%;
+      top: 62%;
+    }
+    &:nth-child(6) {
+      left: 25%;
+      top: 54%;
+    }
+    &:nth-child(7) {
+      left: 48%;
+      top: 60%;
+    }
+    &-text {
+      width: 280px;
+      text-align: center;
+      color: $color-dark;
+      background-color: $color-white;
+      border-radius: 2em;
+      padding: 0.7em 1em;
+      margin-bottom: 0.5em;
+      font-size: 0.875em;
+      opacity: 0;
+    }
+    &-marker {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      color: #000000;
+      font-size: 0.875em;
+      font-family: "Roboto", Arial, sans-serif;
+      line-height: 1.4;
+      font-weight: 400;
+      border-width: 2px;
+      background-color: #e21e24;
+      background-position: center center;
+      border-color: #ffffff;
+      border-style: solid;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    }
+  }
+}

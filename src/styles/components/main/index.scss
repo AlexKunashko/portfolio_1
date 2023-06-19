@@ -1,0 +1,73 @@
+.main {
+  min-height: 900px;
+  height: 100vh;
+  background-position: center center;
+  background-attachment: scroll;
+  background-image: url(../assets/image/main/bg__.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $color-white;
+  padding-top: 10em;
+  &__title {
+    margin-bottom: 2.5em;
+  }
+  &__subtitle {
+    color: #949494;
+    font-size: 0.8125em;
+    line-height: 1.55;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    margin-bottom: 2.5em;
+  }
+  &__info {
+    position: relative;
+    color: $color-light-white;
+    font-size: 1.0625em;
+    line-height: 1.55;
+    font-weight: 100;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    @include breakpoint($bp-lg) {
+      margin-bottom: 3em;
+    }
+    @include breakpoint($bp-md) {
+      font-size: 0.9375em;
+    }
+    @include breakpoint($bp-sm) {
+      font-size: 0.8125em;
+      margin-bottom: 5em;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      left: 0;
+      display: block;
+      width: 3px;
+      height: 142px;
+      background-color: #ffa929;
+    }
+  }
+  &__button {
+    color: $color-light-white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    @include breakpoint($bp-lg) {
+      flex-direction: column-reverse;
+      align-items: start;
+      padding-left: 1em;
+    }
+    @include breakpoint($bp-sm) {
+      align-items: center;
+    }
+    p {
+      margin-left: 1em;
+      font-size: 0.9375em;
+      @include breakpoint($bp-lg) {
+        margin-left: 0;
+        margin-bottom: 1em;
+      }
+    }
+  }
+}

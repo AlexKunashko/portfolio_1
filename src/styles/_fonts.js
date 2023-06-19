@@ -1,0 +1,6 @@
+import './fonts/OpenSans/OpenSans-Regular.ttf'
+import './fonts/OpenSans/OpenSans-Light.ttf'
+import './fonts/OpenSans/OpenSans-ExtraBold.ttf'
+import './fonts/OpenSans/OpenSans-Bold.ttf'
+import './fonts/OpenSans/OpenSans-Semibold.ttf'
+import './fonts/OpenSans/OpenSans-Medium.ttf'

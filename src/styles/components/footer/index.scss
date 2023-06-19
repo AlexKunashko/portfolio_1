@@ -1,0 +1,84 @@
+.footer {
+  background-color: $color-light-dark;
+  color: $color-white;
+  padding-top: 9.375em;
+  @include breakpoint($bp-lg) {
+    padding-top: 5em;
+  }
+  &__logo {
+    padding: 45px 0;
+    text-align: center;
+    img {
+      max-width: 70px;
+      width: 100%;
+    }
+  }
+  &__contacts {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  &__map {
+    padding-top: 3em;
+    @include breakpoint($bp-lg) {
+      padding-top: 0;
+    }
+    iframe {
+      width: 100%;
+      height: 880px;
+      @include breakpoint($bp-lg) {
+        height: 420px;
+      }
+    }
+  }
+  &__contact {
+    position: absolute;
+    top: 140px;
+    left: 20%;
+    padding: 60px;
+    max-width: 420px;
+    background-color: $color-light-dark;
+    color: $color-light-white;
+    @include breakpoint($bp-lg) {
+      position: static;
+      max-width: 640px;
+      width: 100%;
+    }
+    @include breakpoint($bp-md) {
+      padding-left: 60px;
+    }
+    @include breakpoint($bp-sm) {
+      padding-left: 20px;
+    }
+    h2 {
+      text-align: left;
+      font-size: 1.75em;
+      color: $color-white;
+      @include breakpoint($bp-sm) {
+        font-size: 1.5em;
+      }
+    }
+    .a-orange {
+      color: #d36f52;
+    }
+    a {
+      color: $color-light-white;
+      &:hover {
+        color: $color-white;
+      }
+    }
+    p {
+      font-size: 1.125em;
+      @include breakpoint($bp-sm) {
+        font-size: 1;
+      }
+      @include breakpoint($bp-sm) {
+        font-size: 0.875em;
+      }
+      b {
+        color: $color-white;
+      }
+    }
+  }
+}

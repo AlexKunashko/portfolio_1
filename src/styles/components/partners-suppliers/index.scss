@@ -1,0 +1,50 @@
+.partners-suppliers {
+  background-color: $color-light-dark;
+  color: $color-white;
+  padding-top: 9.375em;
+  padding-bottom: 0.9375em;
+  @include breakpoint($bp-lg) {
+    padding-top: 5em;
+  }
+  &__title {
+    margin-bottom: 5em;
+  }
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+      width: 50%;
+      @include breakpoint($bp-lg) {
+        width: 100%;
+      }
+      @include breakpoint($bp-xs) {
+        width: 100%;
+      }
+    }
+    img {
+      width: 100%;
+      filter: grayscale(100%);
+      filter: gray;
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25%;
+    padding: 10px 20px;
+    @include breakpoint($bp-lg) {
+      max-width: 200px;
+      width: 33.33333%;
+    }
+    @include breakpoint($bp-xs) {
+      width: 50%;
+    }
+  }
+}

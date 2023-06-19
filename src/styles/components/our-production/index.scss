@@ -1,0 +1,46 @@
+.our-production {
+  background-color: $color-light-dark;
+  color: $color-white;
+  padding-top: 9.375em;
+  padding-bottom: 0.9375em;
+  @include breakpoint($bp-lg) {
+    padding-top: 5em;
+  }
+  &__title {
+    margin-bottom: 5em;
+  }
+  &__inner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    a {
+      display: block;
+      height: 540px;
+      width: 100%;
+      max-width: 960px;
+      color: $color-white;
+      @include breakpoint($bp-lg) {
+        height: auto;
+        max-width: 780px;
+        aspect-ratio: 16/9;
+      }
+      &:hover {
+        color: red;
+      }
+      i {
+        font-size: 50px;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

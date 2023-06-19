@@ -1,0 +1,123 @@
+.our-work {
+  background-color: $color-light-dark;
+  color: $color-white;
+  padding-top: 9.375em;
+  padding-bottom: 0.9375em;
+  @include breakpoint($bp-lg) {
+    padding-top: 5em;
+  }
+  &__title {
+    padding-bottom: 5em;
+  }
+  &__inner {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0 20px 20px 20px;
+    @include breakpoint($bp-lg) {
+      grid-gap: 10px;
+      padding: 0 10px 10px 10px;
+    }
+    img {
+      width: 100%;
+      aspect-ratio: 1/1;
+    }
+    &-1 {
+      grid-template-areas:
+        "img-1 img-1 img-2 img-3"
+        "img-1 img-1 img-4 img-5";
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+      @include breakpoint($bp-lg) {
+        grid-template-areas:
+          "img-1 img-1 img-1 img-1"
+          "img-2 img-2 img-3 img-3"
+          "img-4 img-4 img-5 img-5";
+      }
+    }
+    &-2 {
+      grid-template-areas:
+        "img-6 img-7 img-10 img-10"
+        "img-8 img-9 img-10 img-10";
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+      @include breakpoint($bp-lg) {
+        grid-template-areas:
+          "img-6 img-6 img-7 img-7"
+          "img-8 img-8 img-9 img-9"
+          "img-10 img-10 img-10 img-10";
+      }
+    }
+    &-3 {
+      grid-template-areas:
+        "img-11 img-12 img-15 img-15"
+        "img-13 img-14 img-15 img-15";
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+      @include breakpoint($bp-lg) {
+        grid-template-areas:
+          "img-11 img-11 img-11 img-11"
+          "img-12 img-12 img-13 img-13"
+          "img-14 img-14 img-15 img-15";
+      }
+    }
+    &-4 {
+      grid-template-areas:
+        "img-16 img-16 img-17 img-17"
+        "img-16 img-16 img-17 img-17";
+      grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+      @include breakpoint($bp-lg) {
+        grid-template-areas:
+          "img-16 img-16 img-16 img-16"
+          "img-17 img-17 img-17 img-17";
+      }
+    }
+  }
+  &__image-1 {
+    grid-area: img-1;
+  }
+  &__image-2 {
+    grid-area: img-2;
+  }
+  &__image-3 {
+    grid-area: img-3;
+  }
+  &__image-4 {
+    grid-area: img-4;
+  }
+  &__image-5 {
+    grid-area: img-5;
+  }
+  &__image-6 {
+    grid-area: img-6;
+  }
+  &__image-7 {
+    grid-area: img-7;
+  }
+  &__image-8 {
+    grid-area: img-8;
+  }
+  &__image-9 {
+    grid-area: img-9;
+  }
+  &__image-10 {
+    grid-area: img-10;
+  }
+  &__image-11 {
+    grid-area: img-11;
+  }
+  &__image-12 {
+    grid-area: img-12;
+  }
+  &__image-13 {
+    grid-area: img-13;
+  }
+  &__image-14 {
+    grid-area: img-14;
+  }
+  &__image-15 {
+    grid-area: img-15;
+  }
+  &__image-16 {
+    grid-area: img-16;
+  }
+  &__image-17 {
+    grid-area: img-17;
+  }
+}

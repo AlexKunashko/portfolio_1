@@ -1,0 +1,155 @@
+.header {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: top 1s ease;
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint($bp-sm) {
+      align-items: start;
+      margin-bottom: 0.5em;
+    }
+    img {
+      margin-top: 0.5em;
+      height: 75px;
+      @include breakpoint($bp-xl) {
+        height: 60px;
+      }
+      @include breakpoint($bp-lg) {
+        height: 70px;
+      }
+      @include breakpoint($bp-md) {
+        height: 60px;
+      }
+      @include breakpoint($bp-xs) {
+        height: 55px;
+      }
+    }
+    .header__a {
+      width: 160px;
+      display: none;
+      @include breakpoint($bp-sm) {
+        display: block;
+      }
+      a {
+        width: 160px;
+      }
+    }
+  }
+  &__nav {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 14px;
+      color: #333333;
+      white-space: nowrap;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      @include breakpoint($bp-xl) {
+        font-size: 13px;
+      }
+      a {
+        &:hover {
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+  &__menu-btn {
+    @include breakpoint($bp-sm) {
+      padding-top: 1em;
+    }
+    img {
+      width: 40px;
+    }
+  }
+}
+.mobile-header {
+  z-index: 1000;
+  overflow: hidden;
+  position: fixed;
+  width: 0;
+  right: -150%;
+  top: 0;
+  bottom: 0;
+  background: $color-white;
+  color: $color-dark;
+  max-width: 360px;
+  width: 360px;
+  @include breakpoint($bp-sm) {
+    max-width: none;
+    width: 100%;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint($bp-sm) {
+      align-items: start;
+      margin-bottom: 0.5em;
+    }
+
+    img {
+      margin-top: 0.5em;
+      height: 75px;
+      @include breakpoint($bp-xl) {
+        height: 60px;
+      }
+      @include breakpoint($bp-lg) {
+        height: 70px;
+      }
+      @include breakpoint($bp-md) {
+        height: 60px;
+      }
+      @include breakpoint($bp-xs) {
+        height: 55px;
+      }
+    }
+  }
+  &__close {
+    margin-right: 2.5em;
+    @include breakpoint($bp-sm) {
+      margin-right: 1em;
+    }
+    img {
+      width: 35px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: 1em;
+    @include breakpoint($bp-sm) {
+      align-items: center;
+      text-align: center;
+    }
+    ul {
+      margin-bottom: 1em;
+      li {
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+}
+.active-header {
+  right: 0;
+  animation: all 1 ease;
+}
+.scroll-header {
+  background: $color-white;
+}

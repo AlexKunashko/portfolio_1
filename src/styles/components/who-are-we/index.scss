@@ -1,0 +1,44 @@
+.who-are-we {
+  background-color: $color-light-dark;
+  color: $color-white;
+  padding-top: 9.375em;
+  padding-bottom: 0.9375em;
+  @include breakpoint($bp-lg) {
+    padding-top: 5em;
+  }
+  &__title {
+    margin-bottom: 5em;
+    @include breakpoint($bp-lg) {
+      margin-bottom: 3em;
+    }
+  }
+  &__inner {
+    img {
+      width: 100%;
+      margin-bottom: 1em;
+    }
+  }
+  &__name {
+    font-size: 1.375em;
+    font-weight: 600;
+  }
+  &__info {
+    color: $color-light-white;
+    @include breakpoint($bp-lg) {
+      margin-bottom: 2em;
+    }
+    a {
+      color: $color-light-white;
+    }
+    .a-orange {
+      color: #d36f52;
+    }
+  }
+  &__button {
+    text-align: center;
+    padding-top: 8em;
+    @include breakpoint($bp-lg) {
+      padding-top: 4em;
+    }
+  }
+}
