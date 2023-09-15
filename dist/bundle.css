@@ -16514,6 +16514,7 @@ ul {
   opacity: 0.8;
 }
 .our-news__inner > div img {
+  object-fit: cover;
   width: 100%;
   aspect-ratio: 1/1;
 }
